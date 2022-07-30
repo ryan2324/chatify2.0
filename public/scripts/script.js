@@ -35,12 +35,14 @@ sendBtn.addEventListener('click', (e) =>{
         sender: `${document.cookie}`,
         receiver: receiver,
         message: messageBox.value,
+    }, () =>{
+        socket.emit('send',{
+            sender: `${document.cookie}`,
+            receiver: receiver,
+            message: messageBox.value,
+        })
     })
-    socket.emit('send',{
-        sender: `${document.cookie}`,
-        receiver: receiver,
-        message: messageBox.value,
-    })
+    
     
     const msg = document.createElement('span');
     msg.setAttribute('class', 'sent');
