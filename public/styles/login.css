@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+body, *, html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 35px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #717171;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main form {
+  border-top: 10px solid #007C80;
+  width: 400px;
+  height: 400px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  padding-bottom: 50px;
+  row-gap: 20px;
+}
+
+main form p {
+  font-weight: 600;
+  font-size: 26px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0;
+  color: #007C80;
+}
+
+main form .error-input {
+  font-size: 12px;
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+
+main form input[name="email"] {
+  margin-top: auto;
+}
+
+main form input {
+  font-size: 18px;
+  padding: 6px 12px;
+  border: transparent;
+  border-bottom: 1px solid #007C80;
+}
+
+main form input:focus {
+  outline: transparent;
+}
+
+main form button {
+  padding: 6px 12px;
+  border: transparent;
+  background-color: #007C80;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+main form a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #717171;
+}
+/*# sourceMappingURL=login.css.map */

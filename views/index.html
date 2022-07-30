@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatify</title>
+    <link rel="stylesheet" href="../public/styles/style.css">
+    <script src="https://kit.fontawesome.com/a4e4f824b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="brand_container">
+                <img src="../public/assets/brand.png" alt="logo">
+            </div>
+            <button id="burger-menu"><i class="fa-solid fa-bars"></i></button>
+            <ul>
+                <li><button id="help"><i class="fa-solid fa-circle-info"></i></button></li>
+                <li><button id="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></button></li>
+            </ul>
+        </nav>
+        <div class="contact-list">
+            <form action="">
+                <input id="search-box" type="text" placeholder="search email">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="search-result-container">
+                    <!-- search results goes here -->
+                    
+                </div>
+            </form>
+            <div class="contacts">
+                <!-- contacts added goes here -->
+            </div>
+            
+        </div>
+        <div class="conversation">
+            <div class="messages">
+                <div class="notice">
+                    <div>
+                        <img src="../public/assets/brand.png" alt="">
+                    </div>
+                    <p>Welcome to Chatify, please select a user to start conversation.</p>
+                </div>
+            </div>
+            <form id="message-form">
+                <input type="text" placeholder="type a message" name="message-box">
+                <button id="sendBtn">SEND</button>
+            </form>
+        </div>
+        <div class="chat-with-info">
+            <div class="profile">
+                <span></span>
+            </div>
+            <p class="name">
+            </p>
+            <div class="side-profile-btn">
+                <button id="delete"><i class="fa-solid fa-trash-can"></i></button>
+                <button id="report"><i class="fa-solid fa-triangle-exclamation"></i></button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+    <script src="../public/scripts/script.js"></script>
+</body>
+</html>

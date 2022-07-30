@@ -1,0 +1,936 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+body, *, html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 35px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #717171;
+}
+
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    position: relative;
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    padding-top: 35px;
+    overflow-y: hidden;
+  }
+}
+
+main nav {
+  height: 100%;
+  width: 7%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  main nav {
+    position: absolute;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main nav {
+    padding: 5px 20px;
+  }
+}
+
+main nav .brand_container {
+  width: 50px;
+}
+
+@media screen and (max-width: 320px) {
+  main nav .brand_container {
+    width: 20px;
+    display: none;
+  }
+}
+
+main nav .brand_container img {
+  width: 100%;
+}
+
+main nav #burger-menu {
+  border: transparent;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 321px) {
+  main nav #burger-menu {
+    display: none;
+  }
+}
+
+main nav #burger-menu i {
+  color: #007C80;
+}
+
+main nav ul {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main nav ul {
+    row-gap: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+    margin-left: auto;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+main nav ul li {
+  list-style-type: none;
+}
+
+main nav ul li button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+main nav ul li button i {
+  font-size: 30px;
+  color: #007C80;
+}
+
+@media screen and (max-width: 768px) {
+  main nav ul li button i {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main nav ul li button i {
+    font-size: 18px;
+  }
+}
+
+main .contact-list {
+  width: 25%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  main .contact-list {
+    width: 30%;
+    z-index: 9;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list {
+    padding: 5px;
+    row-gap: 10px;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    position: absolute;
+    top: 35px;
+    height: 100%;
+    width: 50%;
+    padding-bottom: 40px;
+    background-color: #fff;
+  }
+}
+
+main .contact-list form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 3px 6px;
+  border: 1px solid #ccc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+main .contact-list form .search-result-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+}
+
+main .contact-list form .search-result-container .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  padding: 5px;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contact-list form .search-result-container .result:hover {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  main .contact-list form .search-result-container .result {
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list form .search-result-container .result {
+    padding: 2px;
+  }
+}
+
+main .contact-list form .search-result-container .result .profile-container {
+  width: 35px;
+  height: 35px;
+  background-color: coral;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 35px;
+  min-width: 35px;
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list form .search-result-container .result .profile-container {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+  }
+}
+
+main .contact-list form .search-result-container .result .profile-container span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  main .contact-list form .search-result-container .result .profile-container span {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list form .search-result-container .result .profile-container span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .contact-list form .search-result-container .result .result-info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list form .search-result-container .result .result-info {
+    font-size: 12px;
+  }
+}
+
+main .contact-list form .search-result-container .result .result-info .email {
+  font-weight: 500;
+  display: inline-block;
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list form .search-result-container .result .result-info .email {
+    max-width: 100px;
+    overflow-x: hidden;
+  }
+}
+
+main .contact-list form .search-result-container .result .result-info .name {
+  text-transform: capitalize;
+}
+
+main .contact-list form .search-result-container .result .add-contact {
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main .contact-list form input {
+  width: 80%;
+  font-size: 18px;
+  border: transparent;
+  outline: transparent;
+}
+
+main .contact-list form input:focus {
+  border-bottom: 2px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  main .contact-list form input {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list form input {
+    font-size: 10px;
+  }
+}
+
+main .contact-list form button {
+  width: 20%;
+  font-size: 24px;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  main .contact-list form button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list form button {
+    font-size: 12px;
+  }
+}
+
+main .contact-list form button i {
+  color: #007C80;
+}
+
+main .contact-list .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 5px;
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list .contacts {
+    row-gap: 2px;
+    max-width: 100%;
+    overflow-y: scroll;
+  }
+}
+
+main .contact-list .contacts .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list .contacts .contact {
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+  }
+}
+
+main .contact-list .contacts .contact:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+main .contact-list .contacts .contact .profile-container {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  background-color: coral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list .contacts .contact .profile-container {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+  }
+}
+
+main .contact-list .contacts .contact .profile-container span {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list .contacts .contact .profile-container span {
+    font-size: 12px;
+  }
+}
+
+main .contact-list .contacts .contact .info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .contact-list .contacts .contact .info .recent-message {
+  color: #717171;
+  font-weight: 600;
+  display: block;
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list .contacts .contact .info .recent-message {
+    font-size: 8px;
+  }
+}
+
+main .contact-list .contacts .contact .info .name {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 320px) {
+  main .contact-list .contacts .contact .info .name {
+    font-size: 10px;
+  }
+}
+
+main .contact-list .contacts .notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .contact-list .contacts .notice div {
+  width: 120px;
+  height: 120px;
+}
+
+main .contact-list .contacts .notice div img {
+  width: 100%;
+  height: 100%;
+}
+
+main .contact-list .contacts .notice i {
+  color: #007C80;
+  font-size: 24px;
+}
+
+main .contact-list .contacts .notice p {
+  font-size: 18px;
+  text-align: center;
+  color: #007C80;
+  font-weight: 500;
+}
+
+main .conversation {
+  width: 45%;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  main .conversation {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .conversation {
+    padding: 5px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+}
+
+main .conversation .messages {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  overflow-y: scroll;
+  row-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  main .conversation .messages {
+    padding-top: 40px;
+  }
+}
+
+main .conversation .messages .sent, main .conversation .messages .received {
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 768px) {
+  main .conversation .messages .sent, main .conversation .messages .received {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .conversation .messages .sent, main .conversation .messages .received {
+    font-size: 10px;
+    max-width: 150px;
+    padding: 3px 6px;
+  }
+}
+
+main .conversation .messages .received {
+  background-color: #ccc;
+  margin-right: auto;
+  color: #000;
+}
+
+main .conversation .messages .sent {
+  margin-left: auto;
+  background-color: #007C80;
+}
+
+main .conversation .messages .notice {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 5;
+}
+
+main .conversation .messages .notice div {
+  width: 120px;
+  height: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  main .conversation .messages .notice div {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .conversation .messages .notice div {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+main .conversation .messages .notice div img {
+  width: 100%;
+  height: 100%;
+}
+
+main .conversation .messages .notice p {
+  font-size: 20px;
+  text-align: center;
+  color: #007C80;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  main .conversation .messages .notice p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .conversation .messages .notice p {
+    font-size: 12px;
+  }
+}
+
+main .conversation form {
+  width: 100%;
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 320px) {
+  main .conversation form {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 5px;
+  }
+}
+
+main .conversation form input {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 6px 12px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  main .conversation form input {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .conversation form input {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+}
+
+main .conversation form button {
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-weight: 500;
+  border: transparent;
+  color: #fff;
+  background-color: #007C80;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  main .conversation form button {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .conversation form button {
+    font-size: 12px;
+    padding: 3px 6px;
+    margin-left: auto;
+  }
+}
+
+main .chat-with-info {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 23%;
+  padding: 50px 20px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  main .chat-with-info {
+    position: absolute;
+    top: 75px;
+    left: 30%;
+    width: 70%;
+    height: 50px;
+    padding: 0 20px;
+    row-gap: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    background-color: #fff;
+    z-index: 6;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .chat-with-info {
+    top: 35px;
+    height: 25px;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+    width: 100%;
+    left: 0;
+  }
+}
+
+main .chat-with-info .profile {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  main .chat-with-info .profile {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .chat-with-info .profile {
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+main .chat-with-info .profile span {
+  color: #fff;
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  main .chat-with-info .profile span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .chat-with-info .profile span {
+    font-size: 16px;
+  }
+}
+
+main .chat-with-info .name {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  main .chat-with-info .name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .chat-with-info .name {
+    font-size: 12px;
+  }
+}
+
+main .chat-with-info .side-profile-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  main .chat-with-info .side-profile-btn {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .chat-with-info .side-profile-btn {
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+  }
+}
+
+main .chat-with-info .side-profile-btn button {
+  background-color: transparent;
+  border: transparent;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  main .chat-with-info .side-profile-btn button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main .chat-with-info .side-profile-btn button {
+    font-size: 12px;
+  }
+}
+
+main .chat-with-info .side-profile-btn #report {
+  color: dodgerblue;
+}
+
+main .chat-with-info .side-profile-btn #delete {
+  color: crimson;
+}
+/*# sourceMappingURL=style.css.map */
