@@ -316,3 +316,9 @@ logoutBtn.addEventListener('click', () =>{
     document.cookie = 'chatify_token='
     window.location.href = '/login'
 })
+
+document.addEventListener('click', (e) =>{
+    if(e.target.id !== 'search-box'){
+        searchResultContainer.innerHTML = "";
+    }
+})
