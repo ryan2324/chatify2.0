@@ -31,16 +31,17 @@ sendBtn.addEventListener('click', (e) =>{
     if(messageBox.value == " " || messageBox.value == "" || messageBox.value.trim().length == 0){
         return
     }
-    socket.emit('send',{
-        sender: `${document.cookie}`,
-        receiver: receiver,
-        message: messageBox.value,
-    })
     const sendRes =  axios.post('/send', {
         sender: `${document.cookie}`,
         receiver: receiver,
         message: messageBox.value,
     })
+    socket.emit('send',{
+        sender: `${document.cookie}`,
+        receiver: receiver,
+        message: messageBox.value,
+    })
+    
     const msg = document.createElement('span');
     msg.setAttribute('class', 'sent');
     msg.innerHTML = messageBox.value;
