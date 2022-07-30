@@ -13,7 +13,7 @@ const search = require('./routes/search-user');
 require('dotenv').config();
 const app = express();
 
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT;
 const server = app.listen(PORT, () =>{
     console.log(`listening on port: ${PORT}`)
 })
