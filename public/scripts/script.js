@@ -26,30 +26,28 @@ let receiver = {
 };
 
 
-sendBtn.addEventListener('click', (e) =>{
+sendBtn.addEventListener('click', async(e) =>{
     e.preventDefault();
     if(messageBox.value == " " || messageBox.value == "" || messageBox.value.trim().length == 0){
         return
     }
-    const sendRes =  axios.post('/send', {
+    const sendRes =  await axios.post('/send', {
         sender: `${document.cookie}`,
         receiver: receiver,
         message: messageBox.value,
-    }, () =>{
-        socket.emit('send',{
-            sender: `${document.cookie}`,
-            receiver: receiver,
-            message: messageBox.value,
-        })
     })
-    
-    
+    socket.emit('send',{
+        sender: `${document.cookie}`,
+        receiver: receiver,
+        message: messageBox.value,
+    })
     const msg = document.createElement('span');
     msg.setAttribute('class', 'sent');
     msg.innerHTML = messageBox.value;
     messages.append(msg);
     pushToTopRecentContact(receiver.user_id, receiver.email, receiver.name, messageBox.value, true);
     messageBox.value = '';
+    
 })
 
 const pushToTopRecentContact = (id, email, name, recentMessage, sent=true) =>{
