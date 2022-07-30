@@ -1,0 +1,56 @@
+@import 'defaults';
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        border-top: 10px solid map-get($colors, "primary" );
+        width: 400px;
+        height: 400px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        padding-bottom: 50px;
+        row-gap: 20px;
+        p{
+            font-weight: 600;
+            font-size: 26px;
+            align-self: center;
+            margin: 20px 0;
+            color: map-get($colors, "primary" );
+        }
+        .error-input{
+            font-size: 12px;
+            color: red;
+            margin: 0;
+            padding: 0;
+        }
+        input[name="email"]{
+            margin-top: auto;
+        }
+        input{
+            font-size: 18px;
+            padding: 6px 12px;
+            border: transparent;
+            border-bottom: 1px solid map-get($colors, "primary" );
+            &:focus{
+                outline: transparent;
+            }
+        }
+        button{
+            padding: 6px 12px;
+            border: transparent;
+            background-color: map-get($colors, "primary" );
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+        }
+        a{
+            align-self: center;
+            color: rgb(113, 113, 113);
+        }
+    }
+}
