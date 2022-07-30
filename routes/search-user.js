@@ -10,8 +10,8 @@ router.post('/', logger, (req, res) =>{
             return contact.email !== req.user.email;
         })
         if(!err){
-            if(result.length > 0){
-                res.status(200).json(result);
+            if(searchResult.length > 0){
+                res.status(200).json(filtered);
             }else{
                 res.status(200).json('No user to show...')
             }
