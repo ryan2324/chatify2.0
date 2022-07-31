@@ -44,7 +44,7 @@ main {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main {
     padding-top: 35px;
     overflow-y: hidden;
@@ -88,7 +88,7 @@ main nav {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main nav {
     padding: 5px 20px;
   }
@@ -98,7 +98,7 @@ main nav .brand_container {
   width: 50px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main nav .brand_container {
     width: 20px;
     display: none;
@@ -114,7 +114,7 @@ main nav #burger-menu {
   background-color: transparent;
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 401px) {
   main nav #burger-menu {
     display: none;
   }
@@ -171,7 +171,7 @@ main nav ul li button i {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main nav ul li button i {
     font-size: 18px;
   }
@@ -199,7 +199,7 @@ main .contact-list {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list {
     padding: 5px;
     row-gap: 10px;
@@ -270,7 +270,7 @@ main .contact-list form .search-result-container .result:hover {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list form .search-result-container .result {
     padding: 2px;
   }
@@ -294,7 +294,7 @@ main .contact-list form .search-result-container .result .profile-container {
   min-width: 35px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list form .search-result-container .result .profile-container {
     width: 20px;
     height: 20px;
@@ -315,7 +315,7 @@ main .contact-list form .search-result-container .result .profile-container span
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list form .search-result-container .result .profile-container span {
     font-size: 14px;
   }
@@ -327,7 +327,7 @@ main .contact-list form .search-result-container .result .profile-container span
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list form .search-result-container .result .result-info {
     font-size: 12px;
   }
@@ -338,7 +338,7 @@ main .contact-list form .search-result-container .result .result-info .email {
   display: inline-block;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list form .search-result-container .result .result-info .email {
     max-width: 100px;
     overflow-x: hidden;
@@ -373,7 +373,7 @@ main .contact-list form input:focus {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list form input {
     font-size: 10px;
   }
@@ -393,7 +393,7 @@ main .contact-list form button {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list form button {
     font-size: 12px;
   }
@@ -414,7 +414,7 @@ main .contact-list .contacts {
   row-gap: 5px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list .contacts {
     row-gap: 2px;
     max-width: 100%;
@@ -431,7 +431,7 @@ main .contact-list .contacts .contact {
   padding: 5px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list .contacts .contact {
     -webkit-column-gap: 5px;
             column-gap: 5px;
@@ -460,7 +460,7 @@ main .contact-list .contacts .contact .profile-container {
           align-items: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list .contacts .contact .profile-container {
     width: 20px;
     height: 20px;
@@ -475,7 +475,7 @@ main .contact-list .contacts .contact .profile-container span {
   font-weight: 500;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list .contacts .contact .profile-container span {
     font-size: 12px;
   }
@@ -496,7 +496,7 @@ main .contact-list .contacts .contact .info .recent-message {
   display: block;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list .contacts .contact .info .recent-message {
     font-size: 8px;
   }
@@ -506,7 +506,7 @@ main .contact-list .contacts .contact .info .name {
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .contact-list .contacts .contact .info .name {
     font-size: 10px;
   }
@@ -571,7 +571,7 @@ main .conversation {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .conversation {
     padding: 5px;
     padding-bottom: 10px;
@@ -616,7 +616,7 @@ main .conversation .messages .sent, main .conversation .messages .received {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .conversation .messages .sent, main .conversation .messages .received {
     font-size: 10px;
     max-width: 150px;
@@ -669,7 +669,7 @@ main .conversation .messages .notice div {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .conversation .messages .notice div {
     width: 50px;
     height: 50px;
@@ -694,7 +694,7 @@ main .conversation .messages .notice p {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .conversation .messages .notice p {
     font-size: 12px;
   }
@@ -711,7 +711,7 @@ main .conversation form {
   visibility: hidden;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .conversation form {
     -webkit-column-gap: 10px;
             column-gap: 10px;
@@ -737,7 +737,7 @@ main .conversation form input {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .conversation form input {
     padding: 3px 6px;
     font-size: 12px;
@@ -761,7 +761,7 @@ main .conversation form button {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .conversation form button {
     font-size: 12px;
     padding: 3px 6px;
@@ -808,7 +808,7 @@ main .chat-with-info {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .chat-with-info {
     top: 35px;
     height: 25px;
@@ -843,7 +843,7 @@ main .chat-with-info .profile {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .chat-with-info .profile {
     min-width: 20px;
     width: 20px;
@@ -863,7 +863,7 @@ main .chat-with-info .profile span {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .chat-with-info .profile span {
     font-size: 16px;
   }
@@ -880,7 +880,7 @@ main .chat-with-info .name {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .chat-with-info .name {
     font-size: 12px;
   }
@@ -900,7 +900,7 @@ main .chat-with-info .side-profile-btn {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .chat-with-info .side-profile-btn {
     -webkit-column-gap: 15px;
             column-gap: 15px;
@@ -920,7 +920,7 @@ main .chat-with-info .side-profile-btn button {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   main .chat-with-info .side-profile-btn button {
     font-size: 12px;
   }

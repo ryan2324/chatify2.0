@@ -29,7 +29,6 @@ router.post('/login', (req, res) =>{
     db.query(sql, (err, result) =>{
         if(result.length > 0){
             bcrypt.compare(password, result[0].password, (err, verified) =>{
-                console.log(verified);
                 if(verified){
                     const token = jwt.sign({
                                 email: result[0].email,

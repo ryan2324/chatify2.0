@@ -6,7 +6,7 @@ body, *, html{
     font-family: 'Roboto', sans-serif;
 }
 @mixin desktop (){
-    @media screen and (min-width: 321px) {
+    @media screen and (min-width: 401px) {
         @content;
     }
 }
@@ -16,7 +16,7 @@ body, *, html{
     }
 }
 @mixin mobile (){
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 400px) {
         @content;
     }
 }
